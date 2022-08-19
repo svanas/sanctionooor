@@ -1,5 +1,7 @@
 # sanctionooor
 
+![](sanctionooor.png)
+
 ## reason to be
 
 On August 9, 2022, the U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC) decided to sanction Ethereum-based cryptocurrency mixing service Tornado Cash.
