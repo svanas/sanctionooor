@@ -12,6 +12,10 @@ This app will tell you what Ethereum RPC gateway providers decided to over-compl
 
 You can build this app for yourself, or you can download pre-compiled binaries for Windows or macOS.
 
+## others
+
+A big thanks for [snitchy](https://snitchy.xyz/) for existing. Snitchy is a simple online tool to identify whether a given RPC endpoint has implemented the OFAC sanctions. Together we can make censored Ethereum RPC endpoints discoverable.
+
 ## disclaimer
 
 This app is provided free of charge. There is no warranty and no independent audit has been or will be commissioned. The authors do not assume any responsibility for bugs, vulnerabilities, or any other technical defects. Use at your own risk.
