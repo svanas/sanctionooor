@@ -1,5 +1,10 @@
 # sanctionooor
 
+[![GitHub release](https://img.shields.io/github/release/svanas/sanctionooor)](https://github.com/svanas/sanctionooor/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/svanas/sanctionooor)](https://github.com/svanas/sanctionooor/blob/main/LICENSE)
+[![macOS](https://img.shields.io/badge/os-macOS-green)](https://github.com/svanas/sanctionooor/releases/latest/download/macOS.zip)
+[![Windows](https://img.shields.io/badge/os-Windows-green)](https://github.com/svanas/sanctionooor/releases/latest/download/Windows.zip)
+
 ![](sanctionooor.png)
 
 ## reason to be
