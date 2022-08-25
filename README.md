@@ -15,7 +15,7 @@ This app will tell you what Ethereum RPC gateway providers decided to over-compl
 
 ## downloads
 
-You can build this app for yourself, or you can download pre-compiled binaries for Windows or macOS.
+You can build this app for yourself, or you can download pre-compiled binaries for [Windows](https://github.com/svanas/sanctionooor/releases/latest/download/Windows.zip) or [macOS](https://github.com/svanas/sanctionooor/releases/latest/download/macOS.zip).
 
 ## others
 
