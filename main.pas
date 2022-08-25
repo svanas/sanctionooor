@@ -307,14 +307,14 @@ begin
   begin
     const n = Self.NodeEx[Row];
     if Assigned(n) then
-    begin
-      if n.Censored then
-        Canvas.Fill.Color := TAlphaColors.Red
-      else
-        if n.Online = TOnline.Online then
+      if n.Censored or (n.Online = TOnline.Online) then
+      begin
+        if n.Censored then
+          Canvas.Fill.Color := TAlphaColors.Red
+        else if n.Online = TOnline.Online then
           Canvas.Fill.Color := TAlphaColors.Green;
-      Canvas.FillText(Bounds, S, False, 1, [], Column.HorzAlign, TTextAlign.Center);
-    end;
+        Canvas.FillText(Bounds, S, False, 1, [], Column.HorzAlign, TTextAlign.Center);
+      end;
   end;
 end;
 
