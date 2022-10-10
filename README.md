@@ -1,5 +1,10 @@
 # sanctionooor
 
+[![GitHub release](https://img.shields.io/github/release/svanas/sanctionooor)](https://github.com/svanas/sanctionooor/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/svanas/sanctionooor)](https://github.com/svanas/sanctionooor/blob/main/LICENSE)
+[![macOS](https://img.shields.io/badge/os-macOS-green)](https://github.com/svanas/sanctionooor/releases/latest/download/macOS.zip)
+[![Windows](https://img.shields.io/badge/os-Windows-green)](https://github.com/svanas/sanctionooor/releases/latest/download/Windows.zip)
+
 ![](sanctionooor.png)
 
 ## reason to be
@@ -10,15 +15,20 @@ This app will tell you what Ethereum RPC gateway providers decided to over-compl
 
 ## downloads
 
-You can build this app for yourself, or you can download pre-compiled binaries for Windows or macOS.
+You can build this app for yourself, or you can download pre-compiled binaries for [Windows](https://github.com/svanas/sanctionooor/releases/latest/download/Windows.zip) or [macOS](https://github.com/svanas/sanctionooor/releases/latest/download/macOS.zip).
 
 ## others
 
-A big thanks for [snitchy](https://snitchy.xyz/) for existing. Snitchy is a simple online tool to identify whether a given RPC endpoint has implemented the OFAC sanctions. Together we can make censored Ethereum RPC endpoints discoverable.
+A big thanks to [snitchy](https://snitchy.xyz/) for existing. Snitchy is a simple online tool to identify whether a given RPC endpoint has implemented the OFAC sanctions. Together we can make censored Ethereum RPC endpoints discoverable.
 
 ## warning
 
 This app will run a request for a U.S. Treasury-sanctioned smart contract on the Ethereum blockchain through [each and every known gateway provider](https://github.com/svanas/ethereum-node-list). We need to assume all of them will log your IP address. Some of them will censor your transaction. Some of those censoring your transaction might block your API key from further usage. Worst case scenario and depending on your jurisdiction, you might incur in penalty or fines by the U.S. Department of Treasury.
+
+## resources
+
+* [How does Tornado Cash work?](https://www.coincenter.org/education/advanced-topics/how-does-tornado-cash-work)
+* [Tornado Cash usage post censorship](https://hackmd.io/@gozzy/tornado-cash-post-censorship)
 
 ## disclaimer
 
