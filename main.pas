@@ -71,6 +71,7 @@ uses
   // Delphi
   System.UITypes,
   // FireMonkey
+  FMX.BehaviorManager,
   FMX.Dialogs,
   // Velthuis' BigNumbers
   Velthuis.BigIntegers,
@@ -140,6 +141,7 @@ end;
 constructor TfrmMain.Create(aOwner: TComponent);
 begin
   inherited Create(aOwner);
+  Self.Grid.AutoHide := TBehaviorBoolean.False;
   Self.Refresh;
 end;
 
