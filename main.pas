@@ -229,7 +229,7 @@ begin
         end;
         const client = (function(n: INode): IWeb3
         begin
-          var client := TWeb3.Create(n.Chain, n.Rpc);
+          var client := n.Client;
           // do not prompt "do you approve of this signature request?"
           client.OnSignatureRequest := procedure(
             from, &to   : TAddress;
