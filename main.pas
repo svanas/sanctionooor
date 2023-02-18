@@ -79,6 +79,20 @@ uses
   web3.eth.tx,
   web3.eth.types;
 
+{$I sanctionooor.api.key}
+
+function getApiKey(const name: string): string;
+begin
+  if name = 'Infura' then
+    Result := INFURA_API_KEY
+  else if name = 'Pocket Network' then
+    Result := POCKET_API_KEY
+  else if name = 'Rivet' then
+    Result := RIVET_API_KEY
+  else
+    Result := '';
+end;
+
 type
   TNodeEx = class(TInterfacedObject, INodeEx)
   private
@@ -186,7 +200,7 @@ begin
   if Value <> FNodes then
   begin
     FNodes := Value;
-    for var n in FNodes do n.SetTag(TNodeEx.Create(n.Free));
+    for var n in FNodes do n.SetTag(TNodeEx.Create(n.Freeware or (getApiKey(n.Name) <> '')));
     Self.Repaint;
   end;
 end;
@@ -219,7 +233,11 @@ begin
         next;
         EXIT;
       end;
-      Self.Nodes[index].Online(procedure(online: TOnline; err: IError)
+      Self.Nodes[index].Online(function: string
+      begin
+        Result := getApiKey(Self.Nodes[index].Name)
+      end,
+      procedure(online: TOnline; err: IError)
       begin
         Self.NodeEx[Index].SetOnline(online);
         if online <> TOnline.Online then
@@ -229,7 +247,10 @@ begin
         end;
         const client = (function(n: INode): IWeb3
         begin
-          var client := n.Client;
+          var client := n.Client(function: string
+          begin
+            Result := getApiKey(n.Name)
+          end);
           // do not prompt "do you approve of this signature request?"
           client.OnSignatureRequest := procedure(
             from, &to   : TAddress;
