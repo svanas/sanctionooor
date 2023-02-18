@@ -11,7 +11,7 @@
 
 On August 9, 2022, the U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC) decided to [sanction Ethereum-based cryptocurrency mixing service Tornado Cash](https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220808).
 
-This app will tell you what Ethereum RPC gateway providers decided to over-comply with OFAC sanctions and block your transactions, and which ones won't.
+This app will tell you what Ethereum RPC providers decided to over-comply with OFAC sanctions and block your transactions, and which ones won't.
 
 ## downloads
 
@@ -19,7 +19,7 @@ You can build this app for yourself, or you can download pre-compiled binaries f
 
 ## warning
 
-This app will run a request for a U.S. Treasury-sanctioned smart contract on the Ethereum blockchain through [each and every known gateway provider](https://github.com/svanas/ethereum-node-list). We need to assume all of them will log your IP address. Some of them will censor your transaction. Some of those censoring your transaction might block your API key from further usage. Worst case scenario and depending on your jurisdiction, you might incur in penalty or fines by the U.S. Department of Treasury.
+This app will run a request for a U.S. Treasury-sanctioned smart contract on the Ethereum blockchain through [each and every known provider](https://github.com/svanas/ethereum-node-list). We need to assume all of them will log your IP address. Some of them will censor your transaction. Some of those censoring your transaction might block your API key from further usage. Worst case scenario and depending on your jurisdiction, you might incur in penalty or fines by the U.S. Department of Treasury.
 
 ## resources
 
