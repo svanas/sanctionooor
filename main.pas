@@ -79,20 +79,6 @@ uses
   web3.eth.tx,
   web3.eth.types;
 
-{$I sanctionooor.api.key}
-
-function getApiKey(const name: string): string;
-begin
-  if name = 'Infura' then
-    Result := INFURA_API_KEY
-  else if name = 'Pocket Network' then
-    Result := POCKET_API_KEY
-  else if name = 'Rivet' then
-    Result := RIVET_API_KEY
-  else
-    Result := '';
-end;
-
 type
   TNodeEx = class(TInterfacedObject, INodeEx)
   private
@@ -200,7 +186,7 @@ begin
   if Value <> FNodes then
   begin
     FNodes := Value;
-    for var n in FNodes do n.SetTag(TNodeEx.Create(n.Freeware or (getApiKey(n.Name) <> '')));
+    for var n in FNodes do n.SetTag(TNodeEx.Create(n.Freeware));
     Self.Repaint;
   end;
 end;
@@ -235,7 +221,7 @@ begin
       end;
       Self.Nodes[index].Online(function: string
       begin
-        Result := getApiKey(Self.Nodes[index].Name)
+        Result := ''
       end,
       procedure(online: TOnline; err: IError)
       begin
@@ -249,14 +235,14 @@ begin
         begin
           var client := n.Client(function: string
           begin
-            Result := getApiKey(n.Name)
+            Result := ''
           end);
           // do not prompt "do you approve of this signature request?"
           client.OnSignatureRequest := procedure(
-            from, &to   : TAddress;
-            gasPrice    : TWei;
-            estimatedGas: BigInteger;
-            callback    : TSignatureRequestResult)
+            const from, &to   : TAddress;
+            const gasPrice    : TWei;
+            const estimatedGas: BigInteger;
+            const callback    : TSignatureRequestResult)
           begin
             callback(True, nil);
           end;
