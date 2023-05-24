@@ -26,6 +26,16 @@ This app will run a request for a U.S. Treasury-sanctioned smart contract on the
 * [How does Tornado Cash work?](https://www.coincenter.org/education/advanced-topics/how-does-tornado-cash-work)
 * [Tornado Cash usage post censorship](https://hackmd.io/@gozzy/tornado-cash-post-censorship)
 
+## the may 20, 2023 attack on governance
+
+A hacker took over the Tornado Cash DAO on 2023/05/20 at 07:25:11 UTC, controlling everything the DAO owned, including tornadocash.eth
+
+* check out [this great thread](https://twitter.com/mesquka/status/1660056267753422849) with details about the hack
+* don’t use Tornado Nova. Only ever use Tornado Cash on Ethereum.
+* don’t use tornadocash.eth because the hacker owns it and can point it to whatever he wants. Use [the last audited UI on IPFS](https://cloudflare-ipfs.com/ipfs/bafybeiezldbnvyjgwevp4cdpu44xwsxxas56jz763jmicojsa6hm3l3rum/)
+
+Because the protocol itself is immutable and the admin key is 0x0, neither OFAC nor the hacker can take it down.
+
 ## disclaimer
 
 This app is provided free of charge. There is no warranty and no independent audit has been or will be commissioned. The authors do not assume any responsibility for bugs, vulnerabilities, or any other technical defects. Use at your own risk.
