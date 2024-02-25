@@ -34,7 +34,17 @@ A hacker took over the Tornado Cash DAO on 2023/05/20 at 07:25:11 UTC, controlli
 * don’t use Tornado Nova. Only ever use Tornado Cash on Ethereum.
 * don’t use tornadocash.eth because the hacker owns it and can point it to whatever he wants. Use [the last audited UI on IPFS](https://cloudflare-ipfs.com/ipfs/bafybeiezldbnvyjgwevp4cdpu44xwsxxas56jz763jmicojsa6hm3l3rum/)
 
-Because the protocol itself is immutable and the admin key is 0x0, neither OFAC nor the hacker can take it down.
+## the february 2024 attack on tornadocash.eth
+
+The following malicious governance proposals compromised tornadocash.eth:
+* https://tornadocash.eth.link/governance/47
+* https://tornadocash.eth.link/governance/48
+
+Don't use tornadocash.eth or tornadocash.eth.link. Only ever use [the last audited UI on IPFS](https://cloudflare-ipfs.com/ipfs/bafybeiezldbnvyjgwevp4cdpu44xwsxxas56jz763jmicojsa6hm3l3rum/)
+
+## summary
+
+Because the protocol itself is immutable and the admin key is 0x0, neither OFAC nor the hackers can take it down.
 
 ## disclaimer
 
